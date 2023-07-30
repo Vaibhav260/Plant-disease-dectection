@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background: #b6ffb6;
+      background-image: url("https://images.unsplash.com/photo-1495481438903-8f0e2c5cf455");
+      background-size: cover;
+      background-position: center;
+      font-family: "Open Sans", sans-serif;
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #69b578;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-top: 80px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    input[type="file"] {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      border: 2px solid #69b578;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    input[type="submit"] {
+      display: block;
+      margin: auto;
+      border: none;
+      background-color: #69b578;
+      padding: 10px;
+      border-radius: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .inspiration {
+      font-size: 18px;
+      text-align: center;
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <head>
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <h1>Image Classification - Detecting Plant Diseases</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" />
+      <input type="submit" value="Predict" />
+    </form>
+    <p class="inspiration">
+      Inspired by the need to provide farmers with a tool that can quickly and
+      accurately detect plant diseases, we created this image classification
+      model. By analyzing images of plants and identifying signs of disease,
+      farmers can take action to prevent the spread of disease and protect their
+      crops.
+    </p>
+    <footer>
+      <p>Created by Vaibhav Hawaldar</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+joblib
+flask  
+numpy  
+opencv-python

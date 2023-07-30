@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Classification - Detecting Plant Diseases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: #b6ffb6;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.5' stroke='%23fff' stroke-opacity='0.5' fill-opacity='0' stroke-width='1'/%3E%3C/svg%3E");
+        animation: background-animation 10s ease-in-out infinite;
+      }
+
+      @keyframes background-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 48px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      form {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      input[type="file"] {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 2px solid rgba(0, 128, 0, 0.5);
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+      }
+      input[type="submit"] {
+        display: block;
+        margin: auto;
+        border: none;
+        background-color: rgba(0, 128, 0, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .inspiration {
+        font-size: 18px;
+        text-align: center;
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: transparent;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <a class="navbar-brand" href="#">Plant Disease Detection</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="/Users/vaibhav/Nmims/sem 6/Machine learning/Machine learning code/templates/about.html"
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Image Classification - Detecting Plant Diseases</h1>
+      <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" />
+        <input type="submit" value="Predict" />
+      </form>
+      <p class="inspiration">
+        Inspired by the need to provide farmers with a tool that can quickly and
+        accurately detect plant diseases, we created this image classification
+        model. By analyzing images of plants and identifying signs of disease,
+        farmers can take action to prevent the spread of disease and protect
+        their crops.
+      </p>
+    </div>
+    <footer>
+      <p>Created by Vaibhav Hawaldar</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-base.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
